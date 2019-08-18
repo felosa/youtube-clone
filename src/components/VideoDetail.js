@@ -6,7 +6,7 @@ const VideoDetail = ({ video }) => {
   if (!video)
     return (
       <div style={{ fontSize: "30px", padding: '15px', borderRadius: '10px', marginTop: '150px', backgroundColor: 'white' }}>
-        Welcome to Felosa's YOUTUBE APP, feel free to search for any video you
+        Welcome to The Felosa YOUTUBE APP, feel free to search for any video you
         want
       </div>
     );
