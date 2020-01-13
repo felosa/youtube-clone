@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Paper, TextField, Button, Input } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 
 export default class SearchBar extends Component {
   state = {
@@ -20,12 +20,21 @@ export default class SearchBar extends Component {
 
   render() {
     return (
-      <Paper elevation={10} style={{ maxWidth: "250px", textAlign: "center" }}>
+      <div
+        style={{
+          marginRight: "200px",
+          marginTop: "25px",
+          maxWidth: "250px",
+          textAlign: "center"
+        }}
+      >
         <form onSubmit={this.handleSubmit} style={{ display: "flex" }}>
           <input label="Search..." onChange={this.handleChange} />
-          <Button type="submit">Search</Button>
+          <Button style={{ backgroundColor: "#7a101c", color: 'white' }} type="submit">
+            Search
+          </Button>
         </form>
-      </Paper>
+      </div>
     );
   }
 }

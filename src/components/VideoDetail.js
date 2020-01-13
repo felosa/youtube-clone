@@ -1,14 +1,24 @@
 import React from "react";
 
-import { Paper, Typography } from "@material-ui/core";
+import { Paper, Typography, Grid } from "@material-ui/core";
 
 const VideoDetail = ({ video }) => {
   if (!video)
     return (
-      <div style={{ fontSize: "30px", padding: '15px', borderRadius: '10px', marginTop: '150px', backgroundColor: 'white' }}>
-        Welcome to The Felosa YOUTUBE APP, feel free to search for any video you
-        want
-      </div>
+      <Grid
+        spacing={0}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          width: "100px",
+          fontSize: "30px",
+          padding: "15px",
+          borderRadius: "10px",
+          marginTop: "150px"
+        }}
+      >
+        <p></p>
+      </Grid>
     );
 
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;

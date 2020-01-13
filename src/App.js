@@ -3,6 +3,7 @@ import { Grid } from "@material-ui/core";
 import VideoDetail from "./components/VideoDetail";
 import SearchBar from "./components/SearchBar";
 import VideoList from "./components/VideoList";
+import logo from "./images/videoViewer.png";
 import "./App.css";
 
 import youtube from "./api/youtube";
@@ -41,9 +42,16 @@ class App extends React.Component {
               <Grid
                 item
                 xs={12}
-                style={{ paddingLeft: "150px", paddingBottom: "30px" }}
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  paddingLeft: "150px",
+                  paddingBottom: "30px"
+                }}
               >
+                <img style={{ height: "100px" }} src={logo} alt=""></img>
                 <SearchBar onFormSubmit={this.handleSubmit} />
+                <div></div>
               </Grid>
               <Grid
                 item
